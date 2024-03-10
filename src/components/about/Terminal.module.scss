@@ -42,3 +42,11 @@ i {
     color: #00a47f;
   }
 }
+@media only screen and (max-width: 760px) {
+  .terminal {
+    p, li {
+      font-size: 14px;
+    }
+  }
+
+}

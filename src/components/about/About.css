@@ -55,6 +55,7 @@
    .about-content{
       padding: 5px;
    }
+ 
 }
 
 
@@ -93,6 +94,7 @@
    opacity: 0;
    animation: fadeInAnimation 1s ease forwards;
 }
+
 
 @keyframes fadeInAnimation {
    from {
