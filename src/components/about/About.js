@@ -9,16 +9,16 @@ import './About.css'
 export default function About() {
     const firstName = info.firstName
 
-    function aboutMeText() {
-        return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName} $</span> cat
-                About{firstName} </p>
-            <p><span style={{color: info.baseColor}}>About{firstName} <span
-                className={Style.green}>(main)</span> $ </span>
-                {info.bio}
-            </p>
-        </>;
-    }
+    // function aboutMeText() {
+    //     return <>
+    //         <p><span style={{color: info.baseColor}}>{firstName}{info.lastName} $</span> cat
+    //             About{firstName} </p>
+    //         <p><span style={{color: info.baseColor}}>About{firstName} <span
+    //             className={Style.green}>(main)</span> $ </span>
+    //             {info.bio}
+    //         </p>
+    //     </>;
+    // }
 
     function skillsText() {
         return <>

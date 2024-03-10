@@ -9,10 +9,12 @@ const AboutComponent = () => {
             <div className='about-me' >About Me</div>
             <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>Who Am I?</span>
             <div className='about-content'>{info.bio}</div>
+            <div className='about-content'>{info.bio1}</div>
+            <div className='about-content'>{info.bio2}</div>
          </div>
          <div className='image-container'>
             
-            <img src={userImg} className='user-image' alt='user-image'></img>
+            <img src={userImg} className='user-image' alt='user'></img>
             
             <ul className='skills-container'>
     <span className='skills-name' style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Skills</span>

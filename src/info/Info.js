@@ -1,9 +1,9 @@
 import self from "../img/IMAGES-1.png"
-import mock1 from "../img/mock1.png"
+import mock1 from "../img/mock2.png"
 import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
+import mock3 from "../img/mock2.png"
+import mock4 from "../img/mock2.png"
+import mock5 from "../img/mock2.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -31,9 +31,10 @@ export const info = {
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
+      
         {
-            emoji: '😄',
-            text: 'That\'s a great mindset to have'
+            emoji: "🥇",
+            text: "Gold Badge in Java on HackerRank"
         },
         {
             emoji: '🤵🏻',
@@ -44,9 +45,15 @@ export const info = {
             text: "Proficient in MERN Stack"
         },
         {
+            emoji: '😄',
+            text: 'That\'s a great mindset to have'
+        },
+       
+        {
             emoji: "📧",
             text: "nagaraj516700@gmail.com"
-        }
+        },
+        
     ],
     socials: [
      
@@ -71,7 +78,9 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "👋 Hello! I'm Nagaraj S., Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society. 🎓 I'm adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. 💡 I thrive on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology. Let's innovate together! 💼 You should hire me!",
+    bio: `👋 Hello! I'm Nagaraj S., Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society. 🎓 I'm adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. 💡 I thrive on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology.`,
+    bio1:`🏅 I hold a gold badge in Java on Hackerrank and have completed Java and React certifications on Hackerrank. Additionally, I've completed certifications in Java, JavaScript, MongoDB, Node.js, and Express through Great Learning. I've also obtained a certification in MongoDB NoSQL on the MongoDB platform. Moreover, I successfully completed a C++ workshop at Cybernaut with a 97% project completion rate.`,
+    bio2:`💼 Let's innovate together! You should hire me!`,
     skills:
         {
             proficientWith: [{ name: 'Javascript', level: 162 },

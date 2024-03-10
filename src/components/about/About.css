@@ -93,6 +93,7 @@
 .fade-in {
    opacity: 0;
    animation: fadeInAnimation 1s ease forwards;
+   padding: 10px;
 }
 
 

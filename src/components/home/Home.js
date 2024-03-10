@@ -36,7 +36,7 @@ export default function Home() {
                      <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                   ))}
                   <a target="_blank" aria-label="Resume"
-                     rel="noopener noreferrer" href={resumePDF} download="Nagaraj-resume">
+                     rel="noopener noreferrer" href={resumePDF} download="Nagaraj Resume">
                      <i className='fa fa-download' aria-hidden="true" />
                   </a>
                </Box>
