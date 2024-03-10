@@ -20,7 +20,7 @@
 
 }
 .about-content{
-
+   padding: 15px;
 }
 .image-container{
    display: flex;
@@ -51,6 +51,9 @@
    }
    .user-image{
       height: 300px;
+   }
+   .about-content{
+      padding: 5px;
    }
 }
 

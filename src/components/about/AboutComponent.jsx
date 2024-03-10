@@ -12,7 +12,7 @@ const AboutComponent = () => {
          </div>
          <div className='image-container'>
             
-            <img src={userImg} className='user-image'></img>
+            <img src={userImg} className='user-image' alt='user-image'></img>
             
             <ul className='skills-container'>
     <span className='skills-name' style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Skills</span>
