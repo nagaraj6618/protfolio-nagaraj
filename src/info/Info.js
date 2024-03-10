@@ -79,7 +79,7 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Nagaraj S. Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society, adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. Thrives on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology. Let's innovate together!. You should hire me!",
+    bio: "👋 Hello! I'm Nagaraj S., Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society. 🎓 I'm adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. 💡 I thrive on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology. Let's innovate together! 💼 You should hire me!",
     skills:
         {
             proficientWith: [{ name: 'Javascript', level: 160 },
