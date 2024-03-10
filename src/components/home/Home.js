@@ -7,11 +7,11 @@ import SocialIcon from "./SocialIcon";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 import About from '../about/About';
-
+import AboutComponent from '../about/AboutComponent'
 export default function Home() {
 
    return (
-      <div>
+      <React.Fragment>
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
          <Box id='user-image' className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={me} width={{xs: '35vh', md: '40vh'}}
@@ -34,8 +34,9 @@ export default function Home() {
          </Box>
          
       </Box>
-      <About/>
-      
-      </div>
+    
+         {/* <About/> */}
+      <AboutComponent/>
+      </React.Fragment>
    )
 }

@@ -81,7 +81,16 @@ export const info = {
     bio: "Hello! I'm Nagaraj S. Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society, adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. Thrives on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology. Let's innovate together!. You should hire me!",
     skills:
         {
-            proficientWith: ['Javascript', 'React','Node js','Express js',"Java programming","OOP`s", 'git', 'github', 'html', 'css'],
+            proficientWith: [{ name: 'Javascript', level: 160 },
+            { name: 'React', level: 170 },
+            { name: 'Node js', level: 175 },
+            { name: 'Express js', level: 165 },
+            { name: 'Java programming', level: 160 },
+            { name: 'OOP`s', level: 170 },
+            { name: 'git', level: 185 },
+            { name: 'github', level: 180 },
+            { name: 'html', level: 190 },
+            { name: 'css', level: 185 }],
             exposedTo: ['MongoDb', 'Arduino']
         }
     ,
