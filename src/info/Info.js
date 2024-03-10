@@ -49,11 +49,7 @@ export const info = {
         }
     ],
     socials: [
-        {
-            link: "https://facebook.com",
-            icon: 'fa fa-hackerrank',
-            label: 'facebook'
-        },
+     
         {
             link: "https://www.instagram.com/nagaraj_0618?igsh=YnBmeDRtMGQ5ZjZ1",
             icon: 'fa fa-instagram',
@@ -69,11 +65,7 @@ export const info = {
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
-        {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        },
+    
         
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
@@ -82,16 +74,16 @@ export const info = {
     bio: "👋 Hello! I'm Nagaraj S., Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society. 🎓 I'm adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. 💡 I thrive on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology. Let's innovate together! 💼 You should hire me!",
     skills:
         {
-            proficientWith: [{ name: 'Javascript', level: 160 },
+            proficientWith: [{ name: 'Javascript', level: 162 },
             { name: 'React', level: 170 },
             { name: 'Node js', level: 175 },
             { name: 'Express js', level: 165 },
-            { name: 'Java programming', level: 160 },
-            { name: 'OOP`s', level: 170 },
+            { name: 'Java programming', level: 161 },
+            { name: 'OOP`s', level: 171 },
             { name: 'git', level: 185 },
             { name: 'github', level: 180 },
             { name: 'html', level: 190 },
-            { name: 'css', level: 185 }],
+            { name: 'css', level: 188 }],
             exposedTo: ['MongoDb', 'Arduino']
         }
     ,
@@ -117,33 +109,33 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            title: "Tour App",
+            live: "https://github.com/nagaraj6618/tour-app.git", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/nagaraj6618/tour-app.git", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
         {
             title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            live: "#",
+            source: "#",
             image: mock2
         },
         {
             title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            live: "#",
+            source: "#",
             image: mock3
         },
         {
             title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            live: "#",
+            source: "#",
             image: mock4
         },
         {
             title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            live: "#",
+            source: "#",
             image: mock5
         }
     ]

@@ -17,7 +17,7 @@ const AboutComponent = () => {
             <ul className='skills-container'>
     <span className='skills-name' style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Skills</span>
     {info.skills.proficientWith.map((skill, index) => (
-        <li key={skill} className='fade-in'>
+        <li key={index} className='fade-in'>
             <span className="skill-name">{skill.name}</span>
             <div className="skill-level">
                 <div className="skill-level-bar" style={{ width: `${skill.level}px` }}></div>

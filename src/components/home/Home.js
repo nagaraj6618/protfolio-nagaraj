@@ -8,11 +8,13 @@ import { Box } from "@mui/material";
 import { info } from "../../info/Info";
 import resumePDF from "../../img/nagaraj.pdf"
 import AboutComponent from '../about/AboutComponent'
+import ClockComponent from '../ClockComponent/ClockComponent';
 
 export default function Home() {
 
    return (
       <React.Fragment>
+         <div ></div>
          <Box component={'main'} display={'flex'} flexDirection={{ xs: 'column', md: 'row' }} alignItems={'center'}
             justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
             <Box id='user-image' className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{ background: info.gradient }} component={'img'} src={me} width={{ xs: '35vh', md: '40vh' }}
@@ -20,6 +22,7 @@ export default function Home() {
                borderRadius={'50%'} p={'0.75rem'} mb={{ xs: '1rem', sm: 0 }} mr={{ xs: 0, md: '2rem' }} />
             <Box>
                <h1>Hi, I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.firstName}</span><span className={Style.hand}>🤚</span>
+
                </h1>
                <h2>I'm {info.position}.</h2>
                <Box component={'ul'} p={'0.8rem'}>
@@ -28,21 +31,23 @@ export default function Home() {
                   ))}
                </Box>
                <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{ xs: '2rem', md: '2.5rem' }}>
+                  <ClockComponent />
                   {info.socials.map((social, index) => (
                      <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                   ))}
-                    <a target="_blank" aria-label="Resume" 
-                  rel="noopener noreferrer" href={resumePDF} download="Nagaraj-resume">
-                  CV <i className='fa fa-download' aria-hidden="true" />
-               </a>
+                  <a target="_blank" aria-label="Resume"
+                     rel="noopener noreferrer" href={resumePDF} download="Nagaraj-resume">
+                     <i className='fa fa-download' aria-hidden="true" />
+                  </a>
                </Box>
-               
-               
+
+
+
             </Box>
-            
+
          </Box>
-        
-        
+
+
          {/* <About/> */}
          <AboutComponent />
       </React.Fragment>
