@@ -4,7 +4,7 @@ import Toggler from "./home/Toggler";
 import { Link, useLocation } from "react-router-dom";
 import { Box, IconButton, Drawer, List, ListItem, ListItemText } from "@mui/material"; // Import Drawer and related components from Material-UI
 import { Menu as MenuIcon } from '@mui/icons-material'; // Import MenuIcon from Material-UI
-
+import { info } from '../info/Info';
 const links = [
     {
         name: 'Home',
@@ -28,10 +28,10 @@ export default function Navbar({ darkMode, handleClick }) {
     const location = useLocation();
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
     const [openDrawer, setOpenDrawer] = useState(false); // State to control the drawer
-    const info = {
-        initials: 'AB',
-        gradient: 'linear-gradient(to right, #ff7e5f, #feb47b)',
-    };
+    // const info = {
+    //     initials: 'AB',
+    //     gradient: `-webkit-linear-gradient(135deg, ${colors})`,
+    // };
     
     return (
         <Box component={'nav'} width={'100%'} >
