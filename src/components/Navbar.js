@@ -20,6 +20,10 @@ const links = [
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
+    },{
+        name: 'Contact',
+        to: '/contact',
+        active: 'contact'
     }
 ];
 
@@ -50,7 +54,7 @@ export default function Navbar({ darkMode, handleClick }) {
             </Box>
 
             {/* Mobile Navbar */}
-            <Box display={{ xs: 'flex', md: 'none' }} justifyContent="flex-start">
+            <Box display={{ xs: 'flex', md: 'none' }} justifyContent="flex-start" >
                 <IconButton
                     color="inherit"
                     aria-label="open drawer"
@@ -66,6 +70,7 @@ export default function Navbar({ darkMode, handleClick }) {
 
             {/* Drawer for mobile */}
             <Drawer
+              
                 anchor="right"
                 open={openDrawer}
                 onClose={() => setOpenDrawer(false)}
@@ -77,7 +82,7 @@ export default function Navbar({ darkMode, handleClick }) {
                         </ListItem>
 
                     ))}
-                   <ListItem><ListItemText primary={`Theme`} onClick={handleClick} /><Toggler darkMode={darkMode} handleClick={handleClick} /></ListItem> 
+                   <ListItem  onClick={() => {  setOpenDrawer(false); }}> <ListItemText primary={`Theme`} onClick={handleClick} /><Toggler darkMode={darkMode} handleClick={handleClick} /></ListItem> 
                 </List>
             </Drawer>
         </Box>

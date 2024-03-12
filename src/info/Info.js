@@ -23,6 +23,7 @@ of what each of the values mean.
  */
 
 export const info = {
+    
     firstName: "Nagaraj",
     lastName: "S",
     initials: "NS", // the example uses first and last, but feel free to use three or more if you like.
