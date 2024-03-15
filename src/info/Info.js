@@ -148,5 +148,31 @@ export const info = {
             source: "#",
             image: mock5
         }
-    ]
+    ],
+    cerificate:[
+        {
+            companyName:"Hackerrank",
+            certifacteName:"React Js",
+            image:mock2,
+            description:"sjcscdsdcdsc"
+        },
+        {
+            companyName:"Hackerrank",
+            certifacteName:"React Js",
+            image:mock2,
+            description:"sjcscdsdcdsc"
+        },
+        {
+            companyName:"Hackerrank",
+            certifacteName:"React Js",
+            image:mock2,
+            description:"sjcscdsdcdsc"
+        },
+        {
+            companyName:"Hackerrank",
+            certifacteName:"React Js",
+            image:mock2,
+            description:"sjcscdsdcdsc"
+        },
+]
 }
