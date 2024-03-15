@@ -6,6 +6,7 @@ import { info } from '../../info/Info';
 
 const CourseCompletioncertificates = info.completetionCerificate;
 const awardCertificate = info.awardsCertificate;
+const internshipCertificate = info.internshipCertificate;
 const CertificateGallery = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const CertificateGallery = () => {
         </div>
       ))}
     </div>
+
     <div className='certificate-title'> Completion Certifactes</div>
     <div className="certificate-gallery">
         
@@ -37,7 +39,20 @@ const CertificateGallery = () => {
         </div>
       ))}
     </div>
-
+<div className='certificate-title'> Intership & Inplant</div>
+    <div className="certificate-gallery">
+        
+      {internshipCertificate.map((certificate, index) => (
+        <div className="certificate" key={index}>
+          <img src={certificate.image} alt={certificate.certifacteName} />
+          <div className="details">
+            <h3 className='certificate-name'>{certificate.certifacteName}</h3>
+            <h4>{certificate.companyName}</h4>
+            <p>{certificate.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
     </div>
   );
 };
