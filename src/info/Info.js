@@ -1,4 +1,4 @@
-import self from "../img/IMAGES-1.png"
+import self from "../img/IMG3.jpg"
 import mock1 from "../img/mock2.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock2.png"
@@ -28,29 +28,18 @@ import jpmorgan from "../img/certificate/Cybersecurity-virtual-Experience-progra
 
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
 
-
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
 
 export const info = {
     
     firstName: "Nagaraj",
     lastName: "S",
-    initials: "NS", // the example uses first and last, but feel free to use three or more if you like.
+    initials: "NS", 
     position: "a Full Stack Developer",
-    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-    gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
+    selfPortrait: self, 
+    gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
     baseColor: colors[0],
-    miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
+    miniBio: [ 
       
         {
             emoji: "🥇",
@@ -94,8 +83,7 @@ export const info = {
         },
     
         
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
+
 
     ],
     bio: `👋 Hello! I'm Nagaraj S., Passionate Secretary at Saveetha Engineering College's Intelligent Systems in Tech Society. 🎓 I'm adept in Full Stack Development and Arduino projects, dedicated to fostering innovation and collaboration. 💡 I thrive on orchestrating workshops, hackathons, and community outreach to inspire enthusiasts and advance technology.`,

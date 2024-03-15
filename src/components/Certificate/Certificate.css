@@ -1,4 +1,25 @@
 
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #34a8f5;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1.4s linear infinite;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);
+     transition: 0.4 ease-out;
+  }
+}
 .certificate-title{
     background: -webkit-linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
    -webkit-background-clip: text; 
