@@ -9,6 +9,8 @@ import { info } from "../../info/Info";
 import resumePDF from "../../img/nagaraj.pdf"
 import AboutComponent from '../about/AboutComponent'
 import ClockComponent from '../ClockComponent/ClockComponent';
+import Contact from '../Contact/Contact';
+import CertificateGallery from '../Certificate/Certificate';
 
 export default function Home() {
 
@@ -53,6 +55,9 @@ export default function Home() {
 
          {/* <About/> */}
          <AboutComponent />
+         <CertificateGallery/>
+         <Contact/>
+         
       </React.Fragment>
    )
 }
