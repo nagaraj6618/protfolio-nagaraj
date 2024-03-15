@@ -8,6 +8,7 @@ import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 import Contact from './Contact/Contact';
 import CertificateGallery from './Certificate/Certificate';
+import MessageDisplay from './Message/Message';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -20,7 +21,7 @@ export default function BaseLayout() {
    }
 
    useEffect(() => {
-      let detectedDarkMode = eval(localStorage.getItem('darkMode'));
+      let detectedDarkMode = Boolean(localStorage.getItem('darkMode'));
 
       if (detectedDarkMode) {
          setDarkMode(detectedDarkMode)
@@ -43,6 +44,7 @@ export default function BaseLayout() {
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
                   <Route path ={'/contact'} element={<Contact/>}/>
                   <Route path={'/certificate'} element={<CertificateGallery/>}/>
+                  <Route path={'/message'} element={<MessageDisplay/>}/>
                </Routes>
             </Grid>
             <Grid item>
