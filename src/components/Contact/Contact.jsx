@@ -51,7 +51,7 @@ const Contact = () => {
     severity="success"
     className="alert"
   >
-    Form submitted successfully!
+    Form submitted successfully! & Check Mail Inbox
   </Alert>
 )}
 
