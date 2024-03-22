@@ -57,6 +57,12 @@ export default function About() {
             {/* <Terminal text={aboutMeText()}/> */}
             <Terminal  text={skillsText()}/>
             <Terminal text={miscText()}/>
+            {/* <div className="testimonial">
+                <div>Testimonials</div>
+                <p>"Working with Nagaraj was an amazing experience. Their attention to detail and commitment to quality really made a difference."</p>
+                <cite>- Nagappan G, HOD of CSE department in Saveetha Engineering College, during Levita 2021 Graduation Day as a technical team member</cite>
+            </div> */}
+
         </Box>
     )
 }

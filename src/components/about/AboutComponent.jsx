@@ -1,6 +1,6 @@
 import React from 'react'
 import { info } from '../../info/Info'
-import userImg from '../../img/2.jpg'
+import userImg from '../../img/2-removebg-preview.png'
 import './About.css'
 const AboutComponent = () => {
  
