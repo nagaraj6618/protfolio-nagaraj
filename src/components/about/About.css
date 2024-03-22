@@ -41,8 +41,12 @@
 .skill-bar{
    animation: progressAnimation 2s ease-out forwards;
 }
+
 @keyframes progressAnimation {
-   from { width: 0%; }
+   from { 
+      width: 0%;
+   
+ }
 }
 @media only screen and (max-width: 760px) {
    .about-container {

@@ -24,7 +24,7 @@ const AboutComponent = () => {
             <span className="skill-name">{skill.name}</span>
             <div className="skill-level">
                
-                <progress value={skill.level} max="200" className='skill-bar'></progress>
+                <progress value={skill.level} max="200" className='skill-bar' ></progress>
               
             </div>
         </li>
