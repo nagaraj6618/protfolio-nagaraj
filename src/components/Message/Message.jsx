@@ -9,9 +9,12 @@ function MessageDisplay() {
       setMessages(response.data.contactData);
       
     }
+    const deleteMessageHandler = async(id) => {
+      await axios.delete(`${URL}/contact/${id}`)
+      fetchMessage()
+    }
     useEffect(() => {
         fetchMessage()
-        
     },[])
 
   return (
@@ -22,6 +25,7 @@ function MessageDisplay() {
           <p>Email: {message.email}</p>
           <p>Message: {message.message}</p>
           <p>Time: {message.time}</p>
+          <button onClick={()=>deleteMessageHandler(message._id)} className='btn btn-delete'>Delete</button>
         </div>
       ))}
     </div>
