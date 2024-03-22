@@ -1,9 +1,9 @@
 
 
 .loading-spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  top: 46%;
+  left: 46%;
   transform: translate(-50%, -50%);
   border: 8px solid #f3f3f3;
   border-top: 8px solid #34a8f5;

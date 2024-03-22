@@ -28,7 +28,7 @@ const Contact = () => {
       e.preventDefault();
       try {
          // const responseData = () => {
-         const response = await axios.post(`${URL}/contact`, formData);
+          await axios.post(`${URL}/contact`, formData);
 
          setFormData({
             name: '',

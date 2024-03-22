@@ -29,16 +29,21 @@
 .user-image{
    
    filter: drop-shadow(1px 6px 10px rgba(0,255,164,1)) drop-shadow(1px 6px 15px rgba(166,104,255,1));
-   height: 500px;
+   height: 350px;
    border-radius:50%;
    transition:0.4s;
+   margin-right: 40px;
 }
 .user-image:hover {
    transform: scale(1.04); /* You can adjust the scale factor as per your preference */
 }
 
-
-
+.skill-bar{
+   animation: progressAnimation 2s ease-out forwards;
+}
+@keyframes progressAnimation {
+   from { width: 0%; }
+}
 @media only screen and (max-width: 760px) {
    .about-container {
       transition: 0.5s;

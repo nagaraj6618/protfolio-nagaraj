@@ -4,11 +4,15 @@ import './Message.css';
 import {URL} from '../../info/backendUrl.js'
 function MessageDisplay() {
     const [messages,setMessages] = useState([]);
-    useEffect(async() => {
-        const response = await axios.get(`${URL}/contact`);
-        setMessages(response.data.contactData);
-        console.log(response.data.contactData)
-    },[0])
+    async function fetchMessage (){
+      const response = await axios.get(`${URL}/contact`);
+      setMessages(response.data.contactData);
+      
+    }
+    useEffect(() => {
+        fetchMessage()
+        
+    },[])
 
   return (
     <div className="message-display-container">

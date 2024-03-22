@@ -38,10 +38,7 @@ export default function Navbar({ darkMode, handleClick }) {
     const location = useLocation();
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
     const [openDrawer, setOpenDrawer] = useState(false); // State to control the drawer
-    // const info = {
-    //     initials: 'AB',
-    //     gradient: `-webkit-linear-gradient(135deg, ${colors})`,
-    // };
+  
     
     return (
         <Box component={'nav'} width={'100%'} >
@@ -60,7 +57,7 @@ export default function Navbar({ darkMode, handleClick }) {
             </Box>
 
             {/* Mobile Navbar */}
-            <Box display={{ xs: 'flex', md: 'none' }} justifyContent="flex-start" >
+            <Box display={{ xs: 'flex', md: 'none' }} justifyContent={"flex-start"} >
                 <IconButton
                     color="inherit"
                     aria-label="open drawer"

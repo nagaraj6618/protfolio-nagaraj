@@ -1,4 +1,4 @@
-import self from "../img/IMG3.jpg"
+import self from "../img/2-removebg-preview.png"
 import mock1 from "../img/mock2.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock2.png"
@@ -91,16 +91,20 @@ export const info = {
     bio2:`💼 Let's innovate together! You should hire me!`,
     skills:
         {
-            proficientWith: [{ name: 'Javascript', level: 180 },
+            proficientWith: [
+            { name: 'MERN Stack', level: 190 },
             { name: 'React', level: 180 },
-            { name: 'Node js', level: 185 },
-            { name: 'Express js', level: 185 },
+            { name: 'Node js', level: 170 },
+            { name: 'Express js', level: 195 },
+            { name: 'Javascript', level: 175 },
             { name: 'Java programming', level: 190 },
-            { name: 'OOP`s', level: 190 },
-            { name: 'git', level: 170 },
-            { name: 'github', level: 170 },
-            { name: 'html', level: 190 },
-            { name: 'css', level: 170 }],
+            { name: 'OOP`s', level: 195 },
+            { name: 'git', level: 185 },
+            { name: 'github', level: 185 },
+            { name: 'html', level: 185 },
+            { name: 'css', level: 170 },
+            
+        ],
             exposedTo: ['MongoDb', 'Arduino']
         }
     ,

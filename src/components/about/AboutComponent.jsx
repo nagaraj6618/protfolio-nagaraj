@@ -1,8 +1,9 @@
 import React from 'react'
 import { info } from '../../info/Info'
-import userImg from '../../img/IMG4-1.png'
+import userImg from '../../img/2.jpg'
 import './About.css'
 const AboutComponent = () => {
+ 
    return (
       <div className='about-container'>
          <div className='about-area'>
@@ -22,13 +23,14 @@ const AboutComponent = () => {
         <li key={index} className='fade-in'>
             <span className="skill-name">{skill.name}</span>
             <div className="skill-level">
-                <div className="skill-level-bar" style={{ width: `${skill.level}px` }}></div>
-                {/* <span className="level-label">{skill.level}</span> */}
+               
+                <progress value={skill.level} max="200" className='skill-bar'></progress>
+              
             </div>
         </li>
     ))}
 </ul>
-
+      
             
          </div>
       </div>
