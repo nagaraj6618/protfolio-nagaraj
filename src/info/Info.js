@@ -25,7 +25,7 @@ import internship from "../img/certificate/Internship-IN.jpg"
 import inplant from "../img/certificate/Inplant-FABHOST.jpg"
 import ibmhack from "../img/certificate/Hackathon-IBM.jpg"
 import jpmorgan from "../img/certificate/Cybersecurity-virtual-Experience-program-Forage.jpg"
-
+import courseraNodejs from "../img/certificate/Coursera-nodejs.jpg"
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 
@@ -91,16 +91,16 @@ export const info = {
     bio2:`💼 Let's innovate together! You should hire me!`,
     skills:
         {
-            proficientWith: [{ name: 'Javascript', level: 162 },
-            { name: 'React', level: 170 },
-            { name: 'Node js', level: 175 },
-            { name: 'Express js', level: 165 },
-            { name: 'Java programming', level: 161 },
-            { name: 'OOP`s', level: 171 },
-            { name: 'git', level: 185 },
-            { name: 'github', level: 180 },
+            proficientWith: [{ name: 'Javascript', level: 180 },
+            { name: 'React', level: 180 },
+            { name: 'Node js', level: 185 },
+            { name: 'Express js', level: 185 },
+            { name: 'Java programming', level: 190 },
+            { name: 'OOP`s', level: 190 },
+            { name: 'git', level: 170 },
+            { name: 'github', level: 170 },
             { name: 'html', level: 190 },
-            { name: 'css', level: 188 }],
+            { name: 'css', level: 170 }],
             exposedTo: ['MongoDb', 'Arduino']
         }
     ,
@@ -156,7 +156,12 @@ export const info = {
         }
     ],
     completetionCerificate:[
-      
+        {
+            companyName:"Coursera",
+            certifacteName:"Node js & Express js",
+            image:courseraNodejs,
+            description:"Developing Back-End Apps with Node.js and Express"
+        },
         {
             companyName:"CybernautJPMorgan Chase & Co.",
             certifacteName:"Cybersecurity.",
@@ -227,7 +232,7 @@ export const info = {
     ],
    
     awardsCertificate:[
-        
+       
         {
             companyName:"Hackerrank",
             certifacteName:"React js",
