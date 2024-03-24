@@ -8,7 +8,7 @@ function MessageDisplay() {
   async function fetchMessage() {
     try {
       console.log(token)
-      const response = await axios.get(`http://localhost:4000/api/v1/contact`, {
+      const response = await axios.get(`${URL}/contact`, {
         withCredentials:true,
         
       });
