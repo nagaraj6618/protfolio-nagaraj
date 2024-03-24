@@ -14,10 +14,17 @@ const Login = () => {
       e.preventDefault();
       console.log(userData);
       try{
-         const res = await axios.post(`${URL}/auth/login`,userData,{withCredentials:true});
-         document.cookie = `accessToken=${res.data.token}; path=/`;
-         localStorage.setItem('accessToken',res.data.token)
+         const res = await axios.post(`http://localhost:4000/api/v1/auth/login`,userData,{
+            withCredentials:true,
+            headers:{
+               "Accept":"application/json",
+               "Access-Control-Allow-Origin":"*"
+            }
          
+      });
+
+         localStorage.setItem('accessToken',res.data.token)
+         // window.location.href = '/'
          console.log(res.data);
       }
       catch(error){
