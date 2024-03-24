@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { URL } from '../../info/backendUrl'
+import { URL, URL1 } from '../../info/backendUrl'
 
 const Login = () => {
    const [userData,setUserData] = useState({

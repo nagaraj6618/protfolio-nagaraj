@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Message.css';
-import { URL } from '../../info/backendUrl.js'
+import { URL, URL1 } from '../../info/backendUrl.js'
 function MessageDisplay() {
   const [messages, setMessages] = useState([]);
   const token = localStorage.getItem('accessToken');
