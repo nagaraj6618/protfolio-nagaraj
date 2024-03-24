@@ -6,6 +6,7 @@ function MessageDisplay() {
     const [messages,setMessages] = useState([]);
     async function fetchMessage (){
       const response = await axios.get(`${URL}/contact`);
+      console.log(response)
       setMessages(response.data.contactData);
       
     }
