@@ -14,8 +14,8 @@ const Login = () => {
       e.preventDefault();
       console.log(userData);
       try{
-         const res = await axios.post(`${URL}/auth/login`);
-         // localStorage.setItem('accessToken',res.data.token)
+         const res = await axios.post(`${URL}/auth/login`,userData,{withCredentials:true});
+         localStorage.setItem('accessToken',res.data.token)
          console.log(res.data);
       }
       catch(error){

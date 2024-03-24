@@ -1,22 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './Message.css'; 
-import {URL} from '../../info/backendUrl.js'
+import './Message.css';
+import { URL } from '../../info/backendUrl.js'
 function MessageDisplay() {
-    const [messages,setMessages] = useState([]);
-    async function fetchMessage (){
-      const response = await axios.get(`${URL}/contact`);
+  const [messages, setMessages] = useState([]);
+  const token = localStorage.getItem('accessToken');
+  async function fetchMessage() {
+    try {
+      console.log(token)
+      const response = await axios.get(`${URL}/contact`, {withCredentials:true});
+
       console.log(response)
       setMessages(response.data.contactData);
-      
     }
-    const deleteMessageHandler = async(id) => {
-      await axios.delete(`${URL}/contact/${id}`)
-      fetchMessage()
+    catch (err) {
+      console.log("error:", err)
     }
-    useEffect(() => {
-        fetchMessage()
-    },[])
+  }
+  const deleteMessageHandler = async (id) => {
+    await axios.delete(`${URL}/contact/${id}`)
+    fetchMessage()
+  }
+  useEffect(() => {
+    fetchMessage()
+  }, [])
 
   return (
     <div className="message-display-container">
@@ -26,7 +33,7 @@ function MessageDisplay() {
           <p>Email: {message.email}</p>
           <p>Message: {message.message}</p>
           <p>Time: {message.time}</p>
-          <button onClick={()=>deleteMessageHandler(message._id)} className='btn btn-delete'>Delete</button>
+          <button onClick={() => deleteMessageHandler(message._id)} className='btn btn-delete'>Delete</button>
         </div>
       ))}
     </div>
