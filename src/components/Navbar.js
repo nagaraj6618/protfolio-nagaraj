@@ -30,6 +30,11 @@ const links = [
         name: 'Certificate',
         to: '/certificate',
         active: 'certficate'
+    },
+    {
+        name: 'Admin',
+        to: '/admin/login',
+        active: 'admin pannel'
     }
 ];
 
@@ -42,7 +47,7 @@ export default function Navbar({ darkMode, handleClick }) {
     
     return (
         <Box component={'nav'} width={'100%'} >
-            <Box component={'ul'} display={{ xs: 'none', md: 'flex' }} justifyContent={'center'} alignItems={'center'} gap={{ xs: '2rem', md: '8rem' }} fontSize={'1rem'}>
+            <Box component={'ul'} display={{ xs: 'none', md: 'flex' }} justifyContent={'center'} alignItems={'center'} gap={{ xs: '2rem', md: '4rem' }} fontSize={'1rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active} sx={{ borderImageSource: info.gradient }}>
                         <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>

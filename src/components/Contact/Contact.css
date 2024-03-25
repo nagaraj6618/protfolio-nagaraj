@@ -35,7 +35,7 @@
    padding: 20px;
    /* background-color: #f9f9f9; */
    border-radius: 10px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
    animation: slideIn 0.5s ease forwards;
  }
  
@@ -53,7 +53,7 @@
  .form-input {
    width: 100%;
    padding: 10px;
-   border: 1px solid #ccc;
+   /* border: 1px solid #ccc; */
    border-radius: 5px;
    transition: border-color 0.3s ease;
    animation: fadeIn 0.5s ease forwards;

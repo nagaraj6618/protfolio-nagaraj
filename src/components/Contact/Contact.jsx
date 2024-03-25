@@ -10,7 +10,6 @@ import axios from 'axios';
 import Alert from '@mui/material/Alert';
 
 const Contact = () => {
-
    const [formData, setFormData] = useState({
       name: '',
       email: '',

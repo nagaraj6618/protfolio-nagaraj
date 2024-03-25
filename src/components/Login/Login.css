@@ -1,0 +1,12 @@
+.container{
+   display: flex;
+  align-items: center;
+ /* padding: 10px;
+  */
+  justify-content: center;
+  height: 80vh;
+}
+
+.btn-submit{
+   margin-top: 20px;
+}

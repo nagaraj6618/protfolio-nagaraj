@@ -1,8 +1,11 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { URL, URL1 } from '../../info/backendUrl'
-
+import { URL } from '../../info/backendUrl'
+// import {Box} from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+import './Login.css'
 const Login = () => {
+   const navigate = useNavigate();
    const [userData,setUserData] = useState({
       email:null,
       password:null
@@ -19,6 +22,7 @@ const Login = () => {
       });
 
          localStorage.setItem('accessToken',res.data.token)
+         navigate('/')
          // window.location.href = '/'
          console.log(res.data);
       }
@@ -28,11 +32,19 @@ const Login = () => {
    }
   return (
     <React.Fragment>
-      <form onSubmit={handleSubmit}>
-         <input id='email' onChange={handleChange} type='email'/>
-         <input id='password' onChange={handleChange} type='text'/>
-         <button type='submit'>Submit</button>
+      <div className='container'>
+      <form onSubmit={handleSubmit} className='form-container'>
+      <div className='form-item'>
+                  <label className='form-label'>Email:</label>
+         <input id='email' onChange={handleChange} type='email' className='form-input'/>
+         </div>
+         <div>
+         <label className='form-label'>Password</label>
+         <input id='password' onChange={handleChange} type='text' className='form-input'/>
+         <button type='submit' className='btn-submit'>Submit</button>
+         </div>
       </form>
+      </div>
     </React.Fragment>
   )
 }
