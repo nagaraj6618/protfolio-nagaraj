@@ -10,6 +10,7 @@ import Contact from './Contact/Contact';
 import CertificateGallery from './Certificate/Certificate';
 import MessageDisplay from './Message/Message';
 import Login from './Login/Login';
+import Register from './Login/Register';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -47,6 +48,7 @@ export default function BaseLayout() {
                   <Route path={'/certificate'} element={<CertificateGallery/>}/>
                   <Route path={'/message'} element={<MessageDisplay/>}/>
                   <Route path={'/admin/login'} element = { <Login/> }></Route>
+                  <Route path={'/admin/register'} element = { <Register/> }></Route>
                </Routes>
             </Grid>
             <Grid item>

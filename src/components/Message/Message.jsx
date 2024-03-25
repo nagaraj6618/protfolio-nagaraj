@@ -12,7 +12,6 @@ function MessageDisplay() {
         withCredentials:true,
         
       });
-
       console.log(response)
       setMessages(response.data.contactData);
  
@@ -23,6 +22,7 @@ function MessageDisplay() {
   }
   const deleteMessageHandler = async (id) => {
     await axios.delete(`${URL}/contact/${id}`)
+  
     fetchMessage()
   }
   useEffect(() => {
@@ -31,7 +31,12 @@ function MessageDisplay() {
 
   return (
     <div className="message-display-container">
-      {messages.map((message, index) => (
+      {(messages.length==0) && 
+      
+      <div className='status-admin'>
+        <p>Please log in as the admin😊..</p>
+      </div>}
+      {messages && messages.map((message, index) => (
         <div key={index} className="message-container">
           <h1 className='head-name'>{message.name}</h1>
           <p>Email: {message.email}</p>

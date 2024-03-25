@@ -32,6 +32,11 @@ const links = [
         active: 'certficate'
     },
     {
+        name: 'Message',
+        to: '/message',
+        active: '/message'
+    },
+    {
         name: 'Admin',
         to: '/admin/login',
         active: 'admin pannel'
