@@ -1,9 +1,10 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box} from "@mui/material";
-import {info} from "../../info/Info";
+import { Box } from "@mui/material";
+import { info } from "../../info/Info";
 import AboutComponent from './AboutComponent';
+import resumePDF from '../../img/nagara-resume.pdf'
 import './About.css'
 
 export default function About() {
@@ -22,15 +23,15 @@ export default function About() {
 
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName} $</span> cd Skills/tools
+            <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName} $</span> cd Skills/tools
             </p>
-            <p><span style={{color: info.baseColor}}>Skills/tools <span
+            <p><span style={{ color: info.baseColor }}>Skills/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
-            <p style={{color: info.baseColor}}> Proficient With</p>
+            <p style={{ color: info.baseColor }}> Proficient With</p>
             <ul className={Style.skills}>
                 {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency.name}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Exposed To</p>
+            <p style={{ color: info.baseColor }}> Exposed To</p>
             <ul className={Style.skills}>
                 {info.skills.exposedTo.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
@@ -39,9 +40,9 @@ export default function About() {
 
     function miscText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName} $</span> cd
+            <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName} $</span> cd
                 hobbies/interests</p>
-            <p><span style={{color: info.baseColor}}>hobbies/interests <span
+            <p><span style={{ color: info.baseColor }}>hobbies/interests <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
@@ -53,10 +54,11 @@ export default function About() {
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'0.1rem'} >
-            <AboutComponent/>
+
+            <AboutComponent />
             {/* <Terminal text={aboutMeText()}/> */}
-            <Terminal  text={skillsText()}/>
-            <Terminal text={miscText()}/>
+            <Terminal text={skillsText()} />
+            <Terminal text={miscText()} />
             {/* <div className="testimonial">
                 <div>Testimonials</div>
                 <p>"Working with Nagaraj was an amazing experience. Their attention to detail and commitment to quality really made a difference."</p>
