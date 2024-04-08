@@ -1,0 +1,121 @@
+.about-container{
+   display: flex;
+   flex-direction: column;
+   text-align: justify;
+
+   font-size:20px;
+   padding: 10px;
+   justify-content: center;
+
+}
+.about-area .about-me{
+   font-weight:lighter;
+   padding:10px 0px;  
+   text-align: center;
+   font-size: 30px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+   
+}
+.about-area span{
+   font-size: 24px;
+   font-weight: bolder;
+   
+
+}
+.about-content{
+   padding: 15px;
+}
+.image-container{
+   display: flex;
+   align-items: center;
+}
+.user-image{
+   
+   filter: drop-shadow(1px 6px 10px rgba(0,255,164,1)) drop-shadow(1px 6px 15px rgba(166,104,255,1));
+   height: 350px;
+   border-radius:50%;
+   transition:0.4s;
+   margin-right: 40px;
+}
+.user-image:hover {
+   transform: scale(1.04); /* You can adjust the scale factor as per your preference */
+}
+
+.skill-bar{
+   animation: progressAnimation 2s ease-out forwards;
+}
+
+@keyframes progressAnimation {
+   from { 
+      width: 0%;
+   
+ }
+}
+@media only screen and (max-width: 760px) {
+   .about-container {
+      transition: 0.5s;
+     font-size: 15px;
+     /* width: 100%; */
+   }
+   .image-container{
+      /* display: flex; */
+      flex-direction: column;
+   }
+   .user-image{
+      height: 300px;
+   }
+   .about-content{
+      padding: 5px;
+   }
+ 
+}
+
+
+.skills-container {
+   list-style-type: none;
+}
+
+.skill-name {
+   display: inline-block;
+
+   width: 120px; /* Adjust width as needed */
+}
+
+.skill-level {
+   display: inline-block;
+   vertical-align: middle;
+   
+   width: 200px; /* Adjust width as needed */
+   margin-left: 20px; /* Adjust spacing between skill name and level */
+}
+
+.skill-level-bar {
+   display: inline-block;
+   height: 11px;
+   
+   border-radius: 10px;
+   
+   background-color: #007bff; /* Or any color you prefer */
+}
+
+.level-label {
+   display: inline-block;
+   margin-left: 5px; /* Adjust spacing between level and progress bar */
+}
+.fade-in {
+   opacity: 0;
+   animation: fadeInAnimation 1s ease forwards;
+   padding: 10px;
+}
+
+
+@keyframes fadeInAnimation {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+   
+

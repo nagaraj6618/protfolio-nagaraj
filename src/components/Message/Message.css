@@ -1,0 +1,57 @@
+.message-display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .message-container {
+    flex: 0 0 calc(30% - 20px); 
+    margin: 20px;
+    padding: 20px;
+    /* width: 25%; */
+    /* background-color: #f0f0f0; */
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(88, 84, 84, 0.5);
+  }
+  .head-name{
+    font-size: 30px;
+    background: -webkit-linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+  }
+
+  .message-container h1, .message-container p{
+    padding: 10px;
+  }
+  .btn-delete{
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border:  none;
+    color: white;
+    background-color: rgb(0, 157, 255);
+    transition: 0.4s;
+    
+  }
+  .btn-delete:hover{
+    background-color: white;
+    color: rgb(0, 157, 255);
+  }
+  @media screen and (max-width: 768px) {
+    .message-container {
+      flex-basis: calc(50% - 20px); /* Adjust the width of each message container for smaller screens */
+      font-size: 11px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .message-container {
+      flex-basis: calc(100% - 20px); /* Adjust the width of each message container for even smaller screens */
+    }
+  }
+  
