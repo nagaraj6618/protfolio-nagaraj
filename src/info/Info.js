@@ -33,6 +33,9 @@ import jpmorgan from "../img/certificate/Cybersecurity-virtual-Experience-progra
 import courseraNodejs from "../img/certificate/Coursera-nodejs.jpg"
 import rwr from '../img/certificate/rwr.jpg';
 import lcu from '../img/certificate/LCU.jpg'
+import quizApp from '../img/quiz-app.png'
+import examSlotBook from '../img/exam-slot-book.png'
+
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 
 
@@ -139,6 +142,18 @@ export const info = {
             live: "https://tour-app-frontend-pi.vercel.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/nagaraj6618/tour-app.git", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
+        },
+        {
+            title: "Exam Booking System",
+            live: "https://learner-two.vercel.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/nagaraj6618/learner-fe", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: examSlotBook
+        },
+        {
+            title: "Quiz App",
+            live: "https://quiz-app-nu-dusky.vercel.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/nagaraj6618/quiz-app", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: quizApp
         },
         {
             title: "Weather",
