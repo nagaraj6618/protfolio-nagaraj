@@ -31,6 +31,8 @@ import inplant from "../img/certificate/Inplant-FABHOST.jpg"
 import ibmhack from "../img/certificate/Hackathon-IBM.jpg"
 import jpmorgan from "../img/certificate/Cybersecurity-virtual-Experience-program-Forage.jpg"
 import courseraNodejs from "../img/certificate/Coursera-nodejs.jpg"
+import courseraReactjs from "../img/certificate/react-coursera.jpg"
+import courseraHtmlCssJs from "../img/certificate/html-css-js-coursera.jpg"
 import rwr from '../img/certificate/rwr.jpg';
 import lcu from '../img/certificate/LCU.jpg'
 import quizApp from '../img/quiz-app.png'
@@ -228,6 +230,18 @@ export const info = {
             certifacteName:"Node js & Express js",
             image:courseraNodejs,
             description:"Developing Back-End Apps with Node.js and Express"
+        },
+        {
+            companyName:"Coursera",
+            certifacteName:"React js",
+            image:courseraReactjs,
+            description:"Developing front-end Apps with React.js"
+        },
+        {
+            companyName:"Coursera",
+            certifacteName:"Html,CSS and JS",
+            image:courseraHtmlCssJs,
+            description:"HTML,CSS and JS for Web developers"
         },
         {
             companyName:"CybernautJPMorgan Chase & Co.",
