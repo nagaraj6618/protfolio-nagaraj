@@ -3,6 +3,7 @@ import { info } from '../../info/Info'
 import userImg from '../../img/2-removebg-preview.png'
 import './About.css'
 import resumePDF from '../../img/nagara-resume.pdf'
+import DisplayAvatar from '../Avatar/DisplayAvatar'
 const AboutComponent = () => {
 
    return (
@@ -19,8 +20,10 @@ const AboutComponent = () => {
          </div>
          <div className='image-container'>
 
-            <img src={userImg} className='user-image' alt='user'></img>
-
+            {/* <img src={userImg} className='user-image' alt='user'></img> */}
+            <div className='avatar-container'>
+               <DisplayAvatar className='avatar'/>
+            </div>
             <ul className='skills-container'>
                <span className='skills-name' style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Skills</span>
                {info.skills.proficientWith.map((skill, index) => (

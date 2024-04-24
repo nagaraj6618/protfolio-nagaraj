@@ -11,6 +11,7 @@ import AboutComponent from '../about/AboutComponent'
 import ClockComponent from '../ClockComponent/ClockComponent';
 import Contact from '../Contact/Contact';
 import CertificateGallery from '../Certificate/Certificate';
+import DisplayAvatar from '../Avatar/DisplayAvatar';
 
 export default function Home() {
    const [loaded, setLoaded] = useState(false);
@@ -21,6 +22,7 @@ export default function Home() {
 
    return (
       <React.Fragment>
+         
          <div ></div>
          <Box
             component={'main'}

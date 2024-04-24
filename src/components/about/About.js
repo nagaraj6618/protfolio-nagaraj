@@ -4,7 +4,7 @@ import Terminal from "./Terminal";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
 import AboutComponent from './AboutComponent';
-import resumePDF from '../../img/nagara-resume.pdf'
+// import resumePDF from '../../img/nagara-resume.pdf'
 import './About.css'
 
 export default function About() {

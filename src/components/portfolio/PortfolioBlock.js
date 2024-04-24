@@ -7,7 +7,7 @@ function PortfolioBlock(props) {
    return (
       <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
          {/* <Box component={'img'} src={image} alt={'mockup'}/> */}
-         <img src={image} alt='image' className='stopwatch-image'></img>
+         <img src={image} alt='stopwatch' className='stopwatch-image'></img>
          <h1 style={{fontSize: '2rem'}}>{title}</h1>
          <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
               alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
