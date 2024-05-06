@@ -53,11 +53,11 @@ const CertificateGallery = () => {
             ))}
           </div>
 
-          <div className='certificate-title'> Internship & Inplant</div>
+          <div className='certificate-title '> Internship & Inplant</div>
           <div className="certificate-gallery">
             {internshipCertificate.map((certificate, index) => (
-              <div className="certificate" key={index}>
-                <img src={certificate.image} alt={certificate.certifacteName} />
+              <div className="certificate internship-certificate" key={index}>
+                <img src={certificate.image} alt={certificate.certifacteName} className='' />
                 <div className="details">
                   <h3 className='certificate-name'>{certificate.certifacteName}</h3>
                   <h4>{certificate.companyName}</h4>

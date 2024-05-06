@@ -3,7 +3,7 @@ import mock1 from "../img/tour.png"
 import mock2 from "../img/weather.png"
 import mock3 from "../img/mock2.png"
 import mock4 from "../img/Todo.png"
-import mock5 from "../img/mock2.png"
+
 import Portfolio from "../img/portfolio.png"
 import calc from '../img/calc.png'
 import book from '../img/book.png'
@@ -37,6 +37,14 @@ import rwr from '../img/certificate/rwr.jpg';
 import lcu from '../img/certificate/LCU.jpg'
 import quizApp from '../img/quiz-app.png'
 import examSlotBook from '../img/exam-slot-book.png'
+import teachnookProject from '../img/certificate/teachnook-project-completion_page.jpg'
+import teachnookCourse from '../img/certificate/teachnook-web-development-course_page.jpg'
+import btCar from '../img/bt-car.jpeg'
+import bionicDog from '../img/wavego-dog.jpg'
+import waterLevelManagement from '../img/water-management-level.jpg'
+import shoppingCart from '../img/shopping-cart.png'
+import companyAssessmentPost from '../img/post-assessment.png'
+import thirdEye from '../img/third-eye.png'
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 
@@ -152,6 +160,12 @@ export const info = {
             image: examSlotBook
         },
         {
+            title: "Login,Register & Post",
+            live: "https://company-website-pi.vercel.app", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/nagaraj6618/company-assessment.git", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: companyAssessmentPost
+        },
+        {
             title: "Quiz App",
             live: "https://quiz-app-nu-dusky.vercel.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/nagaraj6618/quiz-app", // this should be a link to the **repository** of the project, where the code is hosted.
@@ -195,9 +209,9 @@ export const info = {
         },
         {
             title: "Shopping Cart",
-            live: "#",
+            live: "https://shoppingcart-six-zeta.vercel.app/",
             source: "https://github.com/nagaraj6618/shoppingCart-fe.git",
-            image: mock5
+            image: shoppingCart
         },
         {
             title: "Calculator",
@@ -212,17 +226,30 @@ export const info = {
             image: stopwatch
         },
         {
+            title: "ThirdEye Technologies",
+            live: "https://thirdeye-technologies.vercel.app/",
+            source: "https://github.com/nagaraj6618/thirdeye-tech.git",
+            image: thirdEye
+        },
+        {
             title: "Mobile controlled Car",
             live: "#",
             source: "https://github.com/arduino-projects-organization/bt-car-arduino.git",
-            image: mock5
+            image: btCar
         },
+       
         {
             title: "Water Level Management - IOT",
             live: "#",
             source: "https://github.com/arduino-projects-organization/water-level-monitor-arduino.git",
-            image: mock5
-        }
+            image: waterLevelManagement
+        },
+        {
+            title: "Bionic Dog",
+            live: "#",
+            source: "https://www.waveshare.com/wavego.htm",
+            image: bionicDog
+        },
     ],
     completetionCerificate:[
         {
@@ -243,6 +270,14 @@ export const info = {
             image:courseraHtmlCssJs,
             description:"HTML,CSS and JS for Web developers"
         },
+        {
+            companyName:"Teachnook",
+            certifacteName:"Web Development",
+            image:teachnookCourse,
+            description:"Virtual Internship Program."
+        },
+       
+
         {
             companyName:"CybernautJPMorgan Chase & Co.",
             certifacteName:"Cybersecurity.",
@@ -378,16 +413,22 @@ export const info = {
     ],
     internshipCertificate:[
         {
+            companyName:"Teachnook",
+            certifacteName:"Web Development",
+            image:teachnookProject,
+            description:"Achieved 100% Project Completion."
+        },
+        {
             companyName:"Connect Infosystem",
             certifacteName:"Web Development",
             image:internship,
-            description:""
+            description:"Developed company website"
         },
         {
             companyName:"Fabhost",
             certifacteName:"Web Development",
             image:inplant,
-            description:""
+            description:"Learned the UI tools and backend framework"
         },
     ]
     
